@@ -8,18 +8,20 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.tiendanube.shipping.model.Rates;
+
 @RestController
 @RequestMapping(path = "/rates")
 public class RateController {
 
 	Logger logger = LoggerFactory.getLogger(RateController.class);
 	
-	@PostMapping
-	public ResponseEntity<String> post(@RequestBody(required = false) String body) {
+	@PostMapping()
+	public ResponseEntity<Rates> post(@RequestBody(required = false) String body) {
 		
 		logger.info(body);
 
-		return ResponseEntity.ok("Success");
+		return ResponseEntity.ok(new Rates());
 	}
 	
 }
