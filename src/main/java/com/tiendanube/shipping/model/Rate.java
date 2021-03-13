@@ -38,10 +38,6 @@ public class Rate {
 		return price;
 	}
 
-	public Double getPrice_merchant() {
-		return price_merchant;
-	}
-
 	public String getCurrency() {
 		return currency;
 	}
