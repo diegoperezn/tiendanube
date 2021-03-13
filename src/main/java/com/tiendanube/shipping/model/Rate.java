@@ -17,7 +17,7 @@ public class Rate {
 
 	private String name = "Standard Shipping";
 	private String code = "standard";
-	private double price = 10.0;
+	private double price = 12.0;
 	private Double price_merchant;
 	private String currency = "ARS";
 	private String type = "ship";
